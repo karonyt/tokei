@@ -23,7 +23,11 @@
       let nowDay = nowTime.getDate();
       let nowHour = nowTime.getHours();
       b = 6
+      c = 24  
       nowHour += b
+        if nowHour > c{
+        nouHour -= c
+        }
       let nowMin  = nowTime.getMinutes();
       let nowSec  = nowTime.getSeconds();
       let msg = "⌚：" + nowMonth + "月" + nowDay + "日" + nowHour + "時" + nowMin + "分" + nowSec + "秒";
